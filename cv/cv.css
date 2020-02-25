@@ -4,13 +4,6 @@
     grid-template-rows: 120px 1fr; */
     grid: 140px 1fr / 15% 25% 45% 15%;
 }
-@media (min-width:1200px){
-    .wrapper{
-        width: 1200px;
-        margin: 0 auto;
-        box-shadow: 0px 1px 3px 1px #444;
-    }
-}
 /* header part start */
 header{
     /* grid-area: 1/1/2/5; */
@@ -295,3 +288,37 @@ main{
     background-color: #75a2a3;
 }
 /* main part end */
+@media (max-width:899px) {
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #skillMap{
+        display: none;
+    }
+    .base-style-main{
+        margin: 10px 5px;
+    }
+    .base-style-main>.main-info>section{
+        flex-direction: column;
+    } 
+    .base-style-main div.experience{
+        margin: 10px 0 0 10px;
+    }
+    .base-style-main div.period{
+        font-size: 14px;
+    }
+}
+@media (min-width:900px) {
+    .wrapper{
+        width: 100%;
+    }
+}
+@media (min-width:1200px){
+    .wrapper{
+        width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0px 1px 3px 1px #444;
+    }
+}
